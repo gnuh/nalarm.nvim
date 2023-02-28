@@ -1,0 +1,45 @@
+*nalarm.nvim.txt* A Alarm plugin for nvim
+*nalarm.nvim*
+
+==============================================================================
+CONTENTS                                                  *nalarm.nvim-contents*
+
+   01. Intro ............................................... |nalarm.nvim-intro|
+   02. Features ......................................... |nalarm.nvim-features|
+   03. Configuration ............................... |nalarm.nvim-configuration|
+   04. Commands ......................................... |nalarm.nvim-commands|
+   05. Usage................................................ |nalarm.nvim-usage|
+   06. Key Bindings.................................. |nalarm.nvim-key-bindings|
+   07. License ........................................... |nalarm.nvim-license|
+
+==============================================================================
+INTRODUCTION                                                 *nalarm.nvim-intro*
+
+
+
+==============================================================================
+FEATURES                                                  *nalarm.nvim-features*
+
+
+==============================================================================
+CONFIGURATION                                        *nalarm.nvim-configuration*
+
+
+==============================================================================
+COMMANDS                                                  *nalarm.nvim-commands*
+
+
+==============================================================================
+USAGE                                                        *nalarm.nvim-usage*
+
+
+==============================================================================
+KEY BINDINGS                                          *nalarm.nvim-key-bindings*
+
+
+==============================================================================
+LICENSE                                                    *nalarm.nvim-license*
+
+MIT License. Copyright © 2023 Gnu
+
+ vim:tw=78:ts=8:ft=help:norl:
