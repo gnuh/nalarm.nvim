@@ -26,7 +26,7 @@
   <br/>
 </div>
 <div align='center'>
-  <h3 style='color: red'>WORK IN PROGRESS, DO NOT USE THIS YET, IT MAY CONTAIN SOME BUGS WHICH I'LL BE FIXING SOON</h3>
+  <h3 style='color: red'>WORK IN PROGRESS, IT SUPPORTS 1 ALARM AT A TIME</h3>
 </div>
 
 # Installation
@@ -59,6 +59,12 @@ require("nalarm").setup({
 ```lua
 local opts = { noremap = true, silent = true }
 keymap("n", "<leader>oi", ":NAlarm<CR>", opts)
+```
+
+### Usage
+
+```
+:NAlarm
 ```
 
 # Todo List
