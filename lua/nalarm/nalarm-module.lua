@@ -1,14 +1,11 @@
-local helper = require("helper")
+local Menu = require("nui.menu")
+local Input = require("nui.input")
+local event = require("nui.utils.autocmd").event
+local Popup = require("nui.popup")
+local NuiLine = require("nui.line")
+local timer = vim.loop.new_timer()
+
 local M = {}
-local api = vim.api
-
-Menu = require("nui.menu")
-Input = require("nui.input")
-event = require("nui.utils.autocmd").event
-Popup = require("nui.popup")
-NuiLine = require("nui.line")
-timer = vim.loop.new_timer()
-
 M.screen_blocker = function()
 	local popup = Popup({
 		enter = true,
