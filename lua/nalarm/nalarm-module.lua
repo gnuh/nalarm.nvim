@@ -6,6 +6,8 @@ local NuiLine = require("nui.line")
 local timer = vim.loop.new_timer()
 
 local M = {}
+
+-- Creates a popup window to block the screen and display an alarm message and time
 M.screen_blocker = function()
 	local popup = Popup({
 		enter = true,
@@ -35,6 +37,7 @@ M.screen_blocker = function()
 	line:render(bufnr, ns_id, linenr_start)
 end
 
+-- Stops the timer used for the alarm
 M.stop_alarm = function(msg, log)
 	if log == nil then
 		log = vim.log.levels.WARN
@@ -45,6 +48,7 @@ M.stop_alarm = function(msg, log)
 	vim.g.beep_alarm = false
 end
 
+-- Creates an input window to set a new alarm time
 M.set_alarm = function()
 	local input = Input({
 		position = "50%",
@@ -108,6 +112,7 @@ M.set_alarm = function()
 	end)
 end
 
+-- Creates a menu window to display options to set or cancel an alarm
 M.open_option_menu = function()
 	local menu = Menu({
 		position = "50%",
@@ -145,6 +150,7 @@ M.open_option_menu = function()
 	menu:mount()
 end
 
+-- Calls the function to open the option menu window
 M.beep = function()
 	M.open_option_menu()
 end
